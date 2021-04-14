@@ -730,7 +730,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{Product_Ordering}}productOrder?orderDate='{{ORDERDATEPO01}}'",
+							"raw": "{{Product_Ordering}}productOrder?orderDate={{ORDERDATEPO01}}",
 							"host": [
 								"{{Product_Ordering}}productOrder"
 							],
