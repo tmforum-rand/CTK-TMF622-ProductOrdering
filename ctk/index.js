@@ -11,7 +11,6 @@ config = JSON.parse(fs.readFileSync('../config.json'))
 var pmCollection = require('./TMF622-ProductOrdering-v4.0.0.testkit.json');
 
 
-exportEnvironment(config['url'])
 
 headers = []
 Object.keys(config['headers']).forEach(function(header){
@@ -26,6 +25,9 @@ pmCollection['item'].forEach(function(i, indexi){
         pmCollection['item'][indexi]['item'][indexii]['request']['header'] = headers
     });
 });
+
+exportEnvironment(config['url'])
+
 
 fs.writeFileSync('pmtest.json',JSON.stringify(pmCollection))
 Object.keys(config['payloads']).forEach(resource => {
