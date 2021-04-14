@@ -613,7 +613,7 @@
 					"response": []
 				},
 				{
-					"name": "/ProductOrder?orderDate='{{ORDERDATEPO01}}'",
+					"name": "/ProductOrder?orderDate={{ORDERDATEPO01}}",
 					"event": [
 						{
 							"listen": "test",
@@ -737,7 +737,7 @@
 							"query": [
 								{
 									"key": "orderDate",
-									"value": "'{{ORDERDATEPO01}}'"
+									"value": "{{ORDERDATEPO01}}"
 								}
 							]
 						},
